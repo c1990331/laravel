@@ -1,10 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
-</html>
+@extends('layouts.default')
+@section('title','about')
+@section('content')
+<h1>关于页</h1>
+@stop
