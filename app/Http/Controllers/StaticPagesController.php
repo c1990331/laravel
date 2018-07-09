@@ -10,10 +10,29 @@ class StaticPagesController
     public function help()
     {
         return view('static_pages/help');
+//         return view('static_pages/index');
     }
     public function index()
     {
-        return view('static_pages/index');
+        $func = $this->closureFunc();
+        $func('first ');
+        $func('second');
+        $func('third');
+    }
+    /**
+     * 定义一个闭包
+     */
+    public function closureFunc()
+    {
+        $num = 1;
+        $func = function($str='')use(&$num)
+        {
+            $num ++;
+            echo $str.'='.$num.'<br>';
+        };
+        echo $num.'<br>';
+        return $func;
+        
     }
 }
 
