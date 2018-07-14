@@ -8462,6 +8462,14 @@ footer .slogon {
   font-weight: bold;
 }
 
+footer #logout {
+  cursor: default;
+}
+
+footer #logout:hover {
+  background-color: transparent;
+}
+
 /* sidebar */
 
 aside section {
